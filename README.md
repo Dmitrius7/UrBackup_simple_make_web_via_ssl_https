@@ -5,7 +5,7 @@ I use it with debian 10. If you use another OS change paths.
 Official UrBackup documentation: https://www.urbackup.org/administration_manual.html#x1-200004.2
 
 
-### How to use (step by step manual for debian)
+### How to use (step by step instructions for debian)
 This is step by step manual for debian. If you use another OS modify paths and commands.
 
     # Allow port 55416 at the ufw firewall (optionally, only if you use ufw firewall)
