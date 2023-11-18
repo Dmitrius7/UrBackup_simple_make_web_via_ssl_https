@@ -1,4 +1,4 @@
-# UrBackup_simple_make_web_via_ssl_https (for UrBackup 2.5 and 2.4 probably earyly versions too)
+# UrBackup_simple_make_web_via_ssl_https (for UrBackup 2.5 and 2.4 probably early versions too)
 Simple make UrBackup web interface accessible via SSL (nginx).
 I use it with debian and ubuntu. If you use another OS change paths.
 
