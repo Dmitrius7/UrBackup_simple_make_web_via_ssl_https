@@ -1,6 +1,6 @@
-# UrBackup_simple_make_web_via_ssl_https
+# UrBackup_simple_make_web_via_ssl_https (for UrBackup 2.5 and 2.4 probably earyly versions too)
 Simple make UrBackup web interface accessible via SSL (nginx).
-I use it with debian 10. If you use another OS change paths.
+I use it with debian and ubuntu. If you use another OS change paths.
 
 Official UrBackup documentation: https://www.urbackup.org/administration_manual.html#x1-200004.2
 
@@ -11,11 +11,11 @@ This is step by step manual for debian. If you use another OS modify paths and c
     # Allow port 55416 at the ufw firewall (optionally, only if you use ufw firewall)
     sudo ufw allow 55416/tcp
 
-    # Install nginx openssl 
+    # Install nginx openssl (commands for apt (debian, ubuntu and etc.) if you use different os just install this packages)
     sudo apt update
     sudo apt install nginx openssl 
 
-    # Create a Self-Signed SSL Certificate
+    # Create a Self-Signed SSL Certificate for 7 years
     sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
     sudo openssl req -x509 -nodes -days 2562 -newkey rsa:2048 -subj "/O=Urb Security/OU=Urb/CN=Urb.local/CN=Urb" -keyout /etc/ssl/certs/urb-cert.key -out /etc/ssl/certs/urb-cert.crt
 
